@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+#upperbar{
+    width: 100%;
+    height: 6rem;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+#bottombar{
+    width: 100%;
+    height: 8rem;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    transform: translate(0, 100%);
+}
+
+
+#logo{
+    height: inherit;
+    width: auto;
+    position: relative;
+    float: left;
+}
+
+#name{
+    position: relative;
+    font-family: 'Kanit', sans-serif;
+    float: left;
+    font-size: large;
+    transform: translate(10px, 20px);
+    color: white;
+    }
+
+#copyright{
+    padding-top: 1rem;
+    color: white;
+}
+
+#unsplash{
+    color: rgb(255, 255, 255);
+}
+
+#wikipedia{
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+#ferrari{
+    padding-top: 40px;
+    height: 20%;
+    width: 20%;
+}
+
+#fiat{
+    padding-top: 90px;
+    height: 30%;
+    width: 20%;
+}
+
+#honda{
+    padding-top: 20%;
+    height: 40%;
+    width: 40%;
+}
+
+#hyundai{
+    padding-top: 15%;
+    height: 40%;
+    width: 40%;
+}
+
+#infiniti{
+    padding-top: 10%;
+    height: 40%;
+    width: 40%;
+}
+
+#koenigsegg{
+    padding-top: 15%;
+    height: 40%;
+    width: 40%;
+}
+
+#mazda{
+    padding-top: 10%;
+    height: 20%;
+    width: 20%; 
+}
+
+#mercedes{
+    padding-top: 10%;
+    height: 30%;
+    width: 30%;  
+}
+
+#peugeot{
+    padding-top: 10%;
+    height: 20%;
+    width: 20%;
+}
+
+#porsche{
+    padding-top: 10%;
+    height: 30%;
+    width: 30%;
+}
+
+#renault{
+    padding-top: 10%;
+    height: 20%;
+    width: 20%; 
+}
+
+#seat{
+    padding-top: 10%;
+    height: 30%;
+    width: 30%; 
+}
+
+#skoda{
+    padding-top: 10%;
+    height: 30%;
+    width: 30%;
+}
+
+#suzuki{
+    padding: 10%;
+    height: 30%;
+    width: 30%;
+}
+
+#tesla{
+    padding: 5%;
+    height: 20%;
+    width: 20%;
+}
+
+#back{
+    margin-top: 1rem;
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+
+}
+#forward{
+    margin-top: 1rem;
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+}
+
+.klik{
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    border: none;
+}
+
+
+
+header{
+    position: relative;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    row-gap: 1rem;
+}
+
+.item{
+    border: 3px solid black;
+    border-radius: 15%;
+    flex-basis: 35%;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(228, 228, 228);
+}
+
+.zdj{
+    padding-top: 5%;
+    height: 30%;
+    width: 30%;
+}
+
+.zdjmn{
+    padding-top: 15%;
+    height: 30%;
+    width: 30%;
+}
+
+.zs{
+    width: 50%;
+    height: 30%;
+    border-radius: 10%;
+    margin-top: 24px;
+    border: 3px solid gray;
+}
+
+
+a{
+    color: rgb(155, 155, 155);
+    text-decoration: none;
+}
+
+p{
+    position: relative;
+    font-family: 'Kanit', sans-serif; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    position: relative;
+    font-family: 'Kanit', sans-serif; 
+    margin-top: 10px;
+}
+
+h2{
+    position: relative;
+    font-family: 'Kanit', sans-serif; 
+    margin-top: 10px;
+}
+
+
+
+
+ @media only screen and (max-width: 600px) {    
+    .item{
+        height: 70px;
+    }
+    #ferrari{
+        padding-top: 10px;
+        height: 20%;
+        width: 20%;
+    }
+    
+    #fiat{
+        padding-top: 20px;
+        height: 20%;
+        width: 20%;
+    }
+}
+ 
+@media only screen and (min-width: 600px) {    
+    .item{
+        height: 90px;
+    }
+}
+ 
+
+@media only screen and (min-width: 800px) {    
+    .item{
+        height: 120px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {    
+    .item{
+        height: 300px;
+    }
+}
