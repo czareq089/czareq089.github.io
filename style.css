@@ -260,12 +260,18 @@ h2{
     .item{
         height: 90px;
     }
+    #bottombar{
+       height: 7rem;
+    }
 }
  
 
 @media only screen and (min-width: 800px) {    
     .item{
         height: 120px;
+    }
+    #bottombar{
+        height: 7rem;
     }
 }
 
