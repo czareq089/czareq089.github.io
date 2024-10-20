@@ -1,0 +1,40 @@
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('loading.gif') no-repeat center center;
+}
+
+#photo {
+    width: 520px;
+    height: 520px; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#info {
+    margin-bottom: 10px;
+}

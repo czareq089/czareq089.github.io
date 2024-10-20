@@ -1,0 +1,51 @@
+/* dodam jeszcze jakieś ładne przejścia między startem a generowaniem planszy */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#round-counter {
+    font-size: 30px;
+    margin-bottom: 10px;
+    visibility: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(16, 40px);
+    grid-template-rows: repeat(16, 40px);
+    gap: 5px;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+}
+
+#start-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
