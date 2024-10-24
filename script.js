@@ -82,6 +82,7 @@ $(document).ready(function() {
             if (under.css('background-color') === 'rgb(255, 0, 0)' || under.css('background-color') === 'rgb(204, 0, 0)') {
                 endGame();
             }
+
             // sprawdzamy co 10ms bo przy 1ms lagi strony
             setTimeout(loseCheck, 10);
         }
@@ -96,7 +97,10 @@ $(document).ready(function() {
         // odświeżamy strone za usera żeby czasem jakichś błędów nie zobaczył
         location.reload();
     }
+    // chyba najprostszy sposób na sprawdzanie czy user nie ucieka poza plansze
+    board.on("mouseleave", function() {
+        if (isGameOn) {
+            endGame();
+        }
+    });
 });
-
-// jeszcze by sie przydało sprawdzać czy jakiś agent nie wychodzi poza plansze
-// i ewentualnie jeśli był jakoś ogarnąć poprzedni wynik na stronie startowej
